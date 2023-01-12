@@ -33,7 +33,8 @@
 			    </div>
 			</div>	
 			<div class="col-lg-5 text-center">
-				<img class="img-fluid" src="image.png">
+				<img class="img-fluid" src="image.png" id="img-first">
+				<img class="img-fluid w-75" src="image-bts.png" id="img-bts" style="display: none;">
 			</div>		
 		</div>
 		<ul class="circles">
@@ -67,12 +68,16 @@ var x = document.getElementById("audio");
 var y = document.getElementById("btn");
 var z = document.getElementById("display");
 var b = document.getElementById("text");
+var c = document.getElementById("img-bts");
+var d = document.getElementById("img-first");
 function enableAutoplay() { 
   x.autoplay = true;
   x.load();
   y.remove();
   z.style.display = 'none';
   b.style.display = 'inline';
+  c.style.display = 'inline';
+  d.style.display = 'none';
 }
 
 </script>    
