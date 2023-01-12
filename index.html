@@ -49,7 +49,7 @@
             <li></li>
             <li></li>
         </ul>
-        <ul class="image">
+        <ul class="image" id="animation-bts" style="display: none;">
             <li></li>
             <li></li>
             <li></li>
@@ -70,6 +70,8 @@ var z = document.getElementById("display");
 var b = document.getElementById("text");
 var c = document.getElementById("img-bts");
 var d = document.getElementById("img-first");
+var e = document.getElementById("animation-bts");
+
 function enableAutoplay() { 
   x.autoplay = true;
   x.load();
@@ -78,6 +80,7 @@ function enableAutoplay() {
   b.style.display = 'inline';
   c.style.display = 'inline';
   d.style.display = 'none';
+  e.style.display = 'inline';
 }
 
 </script>    
